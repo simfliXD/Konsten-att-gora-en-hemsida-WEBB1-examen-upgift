@@ -1,4 +1,4 @@
-.custom-style-box {
+.color-selector-box {
 	border: 2px dashed var(--primary-border-color);
 	border-radius: 8px;
 	padding: 1.4rem;
@@ -6,26 +6,26 @@
 	background: color-mix(in srgb, var(--background-color) 80%, transparent);
 }
 
-.custom-style-controls {
+.color-selector-container {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-end;
 	gap: 1.2rem;
 }
 
-.custom-style-field {
+.color-selector-field {
 	display: flex;
 	flex-direction: column;
 	gap: 0.4rem;
 }
 
-.custom-style-field label {
+.color-selector-field label {
 	font-size: 0.85rem;
 	font-weight: 600;
 	color: var(--heading-text-color);
 }
 
-.custom-style-field input[type="color"] {
+.color-selector-field input[type="color"] {
 	width: 52px;
 	height: 36px;
 	border: 2px solid var(--primary-border-color);
@@ -35,32 +35,44 @@
 	padding: 2px;
 }
 
-.custom-style-actions {
+.color-selector-actions {
 	display: flex;
 	gap: 0.6rem;
 }
 
-.custom-style-actions button {
+.color-selector-actions button {
 	padding: 0.5rem 1.2rem;
 	border: none;
 	border-radius: 6px;
 	font-size: 0.9rem;
 	font-weight: 600;
 	cursor: pointer;
-	transition: var(--transition-quick) ease;
+	transition:
+		opacity 0.15s ease,
+		transform 0.15s ease;
 }
 
-#custom-style-apply {
-	background: #1a9b1a;
-	color: var(--text-color);
+#selector-apply {
+	background: var(--secondary-color);
+	color: var(--header-text-color);
 }
 
-#custom-style-apply:hover,
-#custom-style-reset:hover {
+#selector-apply:hover {
 	opacity: 0.8;
 }
 
-#custom-style-reset {
-	background: var(--aside-background-color);
-	color: var(--heading-text-color);
+#selector-reset {
+	background: var(--aside-background);
+	color: var(--header-text-color);
+}
+
+#selector-reset:hover {
+	opacity: 0.8;
+}
+
+.color-selector-hint {
+	margin: 0.8rem 0 0;
+	font-size: 0.82rem;
+	color: var(--muted-text-color);
+	min-height: 1.2em;
 }
