@@ -1,5 +1,5 @@
-/* ===== CSS VARIABLAR ===== */
-/* :root selector väljer root-elementet (html) och är bra för globala variabler */
+* ===== CSS VARIABLAR ===== */
+/* :root selectorn väljer root-elementet (html) och är bra för globala variabler */
 
 :root {
 	/*Färger - Dessa variabler används genom hela CSS:en */
@@ -60,7 +60,7 @@ body.dark-mode {
 	--background-color: #181c24;
 	--article-background-color: #1f2027;
 
-	--primary-border-color: #d7b95f;
+	--primary-border-color: #d8b95f;
 	--secondary-border-color: #3b4352;
 
 	--header-text-color: #cdcad2;
