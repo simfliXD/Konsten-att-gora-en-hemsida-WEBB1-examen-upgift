@@ -20,7 +20,7 @@ Sidan innehåller bland annat avsnitt om webbhistoria, lagar på nätet, HTML, C
 När man öppnar documentet direkt så fungerar ej localStorage mellan sidorna.
 
 ### Alternativ 2: Kör en lokal server
-Om du vill köra projektet via en lokal server kan du använda till exempel Python:
-Kör från projektmappen:
+Om du vill köra projektet via en lokal server kan du använda till exempel Python, från projektmappen:
 ```bash
 python3 -m http.server 80000
+
