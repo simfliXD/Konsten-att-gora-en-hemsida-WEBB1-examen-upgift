@@ -1,5 +1,5 @@
-* ===== CSS VARIABLAR ===== */
-/* :root selectorn väljer root-elementet (html) och är bra för globala variabler */
+/* ===== CSS VARIABLAR ===== */
+/* :root selector väljer root-elementet (html) och är bra för globala variabler */
 
 :root {
 	/*Färger - Dessa variabler används genom hela CSS:en */
@@ -377,6 +377,8 @@ aside {
 
 	overflow: auto;
 	scroll-behavior: smooth;
+
+	transition: top var(--transition-standard) ease-in-out;
 }
 
 aside ul {
